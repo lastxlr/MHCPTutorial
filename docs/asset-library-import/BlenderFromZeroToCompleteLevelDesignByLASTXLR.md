@@ -1,4 +1,4 @@
-**Blender Tutorial**
+**From Absolute Zero to a Complete Level Design | Tutorial for Blender**
 
 In this tutorial, we’re going to create a simple map for your Horizon World while also learning the essential Blender tools and navigation basics. By the end, you’ll know how to build a cute house, add an environment around it, and prepare your model for export into the Horizon Worlds Desktop Editor. So, basically, you will create a whole level design from 0.
 
@@ -12,7 +12,7 @@ Before we start modeling, it’s important to learn the essential hotkeys and na
 
 **Zoom:** Scroll Wheel / Ctrl + Middle Mouse Button
 
-**Front/Top/Side view:** Numpad 1/7/3
+**Front/Top/Side view:** Numpad 1/7/3 
 
 **General:**
 
