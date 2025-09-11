@@ -39,6 +39,7 @@ Speaking of vertices, as already mentioned before the more vertices some object 
 Since we are talking about objects let’s cover the textures too. The logic is simple - the more textures as separate images you have in your world, the heavier the load on the device and engine (similar to the total objects count). Yet it doesn’t mean that you shall leave your objects without textures at all. As a solution you can combine the textures of different objects on the one UV map, or create trim textures. This way several different objects will use only one texture, this works the best for the small objects or the ones that are not that important. If you have lots of small objects (or the ones in the background) there’s no need for each of them to have a separate 1024x1024 texture. Instead, you can adjust their UV in 3D software the way so they would all share the same UV map. So instead of each of the objects having its own UV-map it will be like a ‘puzzle’ of all UVs ‘stored’ in one. Mastering creating and applying trim textures helps to significantly increase overall performance.
 
 ![alt text](https://github.com/lastxlr/MHCPTutorial/blob/110542a53a02d3db3d33dd7a64101cd7c294bdfa/docs/performance/trim%201.PNG) ![alt text](https://github.com/lastxlr/MHCPTutorial/blob/110542a53a02d3db3d33dd7a64101cd7c294bdfa/docs/performance/trim%202.PNG)
+
 Images source: FlippedNormals
 
 **VFX count**
