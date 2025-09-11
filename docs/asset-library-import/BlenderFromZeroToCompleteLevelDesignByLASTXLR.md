@@ -78,7 +78,7 @@ Now let’s make a house for our map.
 
 Press **Shift + A** -> **Mesh** \-> **Cube** to create a new **Cube**.
 
-\[Image 1\]
+![alt text](https://github.com/lastxlr/MHCPTutorial/blob/7b09105cf86dc92860a6a1978f2f872c8f65bd69/docs/asset-library-import/1.jpg)
 
 This is going to be the base of our house.
 
@@ -94,19 +94,19 @@ In the **Edit Mode** add a cut in the middle of your cube to create a roof base,
 
 **Press Ctrl + R** to add a **Loop Cut** in the middle of a cube. The yellow line is previewing where the cut is going to be, you can change the location of it by moving the mouse. To accept the cut simply press **Left Mouse Button.**
 
-\[Image 3\]
+![alt text](https://github.com/lastxlr/MHCPTutorial/blob/7b09105cf86dc92860a6a1978f2f872c8f65bd69/docs/asset-library-import/3.jpg)
 
 When you edit the object you can switch between selecting **Vertexes**, **Edges** and **Faces** in the **Upper Left Corner** of the Viewport.
 
 Select **Edges** and select the middle cut on top of the cube. Using the move tool from the **Left Bar** in the viewport by **pressing G** and **choosing the Z** axis drag the edge a bit upper to create a house shape.
 
-\[Image 4\]
+![alt text](https://github.com/lastxlr/MHCPTutorial/blob/7b09105cf86dc92860a6a1978f2f872c8f65bd69/docs/asset-library-import/4.jpg)
 
 **Choose Faces** and select two top faces in the place where the roof is supposed to be.
 
 **Press P** and choose **Selection** to separate these faces into a new object.
 
-\[Image 5\]
+![alt text](https://github.com/lastxlr/MHCPTutorial/blob/7b09105cf86dc92860a6a1978f2f872c8f65bd69/docs/asset-library-import/5.jpg)
 
 In the **Upper Right Corner** you can find a new object under your main cube.
 
@@ -116,7 +116,7 @@ Go to an **Object mode** by pressing **\[Tab\]** select the Roof.
 
 **Press S** and then **Y** to scale it a bit within the Y axis.
 
-\[Image 7\]
+![alt text](https://github.com/lastxlr/MHCPTutorial/blob/7b09105cf86dc92860a6a1978f2f872c8f65bd69/docs/asset-library-import/7.jpg)
 
 Go back to the **Edit mode \[Tab\].**
 
@@ -130,11 +130,11 @@ You can decorate the roof using the **Inset tool** for example. Inset tool offse
 
 Select the Upper Faces again, **Press I** and move the mouse to inset. **Press the Left Mouse button** to accept.
 
-\[Image 9\]
+![alt text](https://github.com/lastxlr/MHCPTutorial/blob/7b09105cf86dc92860a6a1978f2f872c8f65bd69/docs/asset-library-import/9.jpg)
 
 Use **Extrude tool \[E\]** and move the mouse down to add some extra thickness to our roof.
 
-\[Image 10\]
+![alt text](https://github.com/lastxlr/MHCPTutorial/blob/7b09105cf86dc92860a6a1978f2f872c8f65bd69/docs/asset-library-import/10.jpg)
 
 Select the side roof edge and extrude it to the side to continue the roof.
 
@@ -158,7 +158,7 @@ Create an inner frame for a window from **Cubes**, You can create one and duplic
 
 Add any desirable decoration for your house, such as the chimney, borders, more windows and rooms and other parts of the house using all the same tools.
 
-\[Image 14\]
+![alt text](https://github.com/lastxlr/MHCPTutorial/blob/7b09105cf86dc92860a6a1978f2f872c8f65bd69/docs/asset-library-import/14.jpg)
 
 **Part 2: UV Unwrapping for the house**
 
@@ -180,7 +180,7 @@ In the **Right viewport** window **press \[Tab\]** to change the mode to Editing
 
 **Press U** -> **Unwrap** -> **Smart UV Project** -> **Unwrap.**
 
-\[image 16\]
+![alt text](https://github.com/lastxlr/MHCPTutorial/blob/7b09105cf86dc92860a6a1978f2f872c8f65bd69/docs/asset-library-import/16.jpg)
 
 In the left window you can see that the UV map has changed and it’s now applied to the whole house.
 
@@ -210,7 +210,7 @@ Now let’s create a second material by pressing the small **“+”** button ne
 
 In the viewport go to **Edit mode \[Tab\]** and select the Top Roof faces and **click Assign** under the materials list. Now you have assigned the second material to the roof only.
 
-\[image 17\]
+![alt text](https://github.com/lastxlr/MHCPTutorial/blob/7b09105cf86dc92860a6a1978f2f872c8f65bd69/docs/asset-library-import/17.jpg)
 
 Continue assigning materials to other parts of the house you would like to paint differently.
 
@@ -226,19 +226,19 @@ The window with your model and a shader editor will be opened.
 
 In the shader editor press **Shift + A** -> **Texture** -> **Image Texture** and place it next to the **Principled BSDF node.**
 
-\[image 18\]
+![alt text](https://github.com/lastxlr/MHCPTutorial/blob/7b09105cf86dc92860a6a1978f2f872c8f65bd69/docs/asset-library-import/18.jpg)
 
 In the created **Image Texture** node **press New** and set the name of the texture to **“House_BR”**
 
 In Meta Horizon you name the textures for **PBR** materials with a suffix **\_BR** so the material combines the **base color** - B; and **roughness** - R.
 
-\[image 19\]
+![alt text](https://github.com/lastxlr/MHCPTutorial/blob/7b09105cf86dc92860a6a1978f2f872c8f65bd69/docs/asset-library-import/19.jpg)
 
 Now **Select** the **Image texture** node and copy it with **Ctrl+C** or **Right Mouse Button** -> **Copy**.
 
 Go to the **Material list** in the Upper Shader Editor menu and choose a second material you created.
 
-\[image 20\]
+![alt text](https://github.com/lastxlr/MHCPTutorial/blob/7b09105cf86dc92860a6a1978f2f872c8f65bd69/docs/asset-library-import/20.jpg)
 
 In the new shader editor paste the node with **Ctrl+V** or **Right Mouse Button** -> **Paste**.
 
@@ -250,13 +250,13 @@ In the **Right Corner** of the viewport find the icon **Render** and set the **R
 
 Cycles is the type of engine that will be used to preview your textures.
 
-\[Image 21\]
+![alt text](https://github.com/lastxlr/MHCPTutorial/blob/7b09105cf86dc92860a6a1978f2f872c8f65bd69/docs/asset-library-import/21.jpg)
 
 Go down in the setting and under the **Bake tab** set the **Bake type** to **Diffuse** as only this channel will be used in Worlds Desktop Editor.
 
 Under the **Influence** uncheck **Direct** and **Inderect** to prevent light information from baking since Meta Horizon will use its own lightning.
 
-\[Image 22\] ?
+![alt text](https://github.com/lastxlr/MHCPTutorial/blob/7b09105cf86dc92860a6a1978f2f872c8f65bd69/docs/asset-library-import/22.jpg)
 
 Under the **Bake tab** click **Bake**.
 
@@ -294,13 +294,13 @@ To upload your model click **Choose files on your device.**
 
 **Click Open** and wait for a while.
 
-\[Image H1\]
+![alt text](https://github.com/lastxlr/MHCPTutorial/blob/7b09105cf86dc92860a6a1978f2f872c8f65bd69/docs/asset-library-import/H1.PNG)
 
 To make sure everything works correct there should be a notification “Success! All Assets Imported”.
 
 Click and drag your Assets to the scene.
 
-\[Image H2\]
+![alt text](https://github.com/lastxlr/MHCPTutorial/blob/7b09105cf86dc92860a6a1978f2f872c8f65bd69/docs/asset-library-import/H2.PNG)
 
 **Part 8: Creating the Environment**
 
@@ -338,7 +338,7 @@ Now let’s add an environment around the house.
 
 - Assign a grey or dark material to make them look like roads or paths.
 
-\[Image Neighborhood\]
+![alt text](https://github.com/lastxlr/MHCPTutorial/blob/7b09105cf86dc92860a6a1978f2f872c8f65bd69/docs/asset-library-import/Neighborhood.PNG)
 
 \[Image Neighborhood 2\]
 
