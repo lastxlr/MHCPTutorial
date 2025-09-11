@@ -8,7 +8,7 @@ The main tool provided by World Desktop Editor to monitor your world’s perform
 
 ![Screen](https://github.com/lastxlr/MHCPTutorial/blob/cb8d24dba9e6523b5e6cff8d110ce24388f10ffc/docs/performance/Capture.PNG)
 
-**Objects**
+**Objects** 
 
 This parameter shows how many objects are there in the world relative to the maximum acceptable quantity (in percent). Objects are separate entities with their own pivot point. So if you have a car for example that has been previously a collection of separate entities (like wheels, chair, car body etc) which were later joined into the single entity in 3D software, it is considered as one object. While a group of entities stored under parent \[Empty object\] is still a group of separate objects.
 
