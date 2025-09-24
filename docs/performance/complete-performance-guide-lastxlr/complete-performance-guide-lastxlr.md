@@ -6,7 +6,7 @@ The Word’s performance on player’s devices is a crucial part of each world�
 
 The main tool provided by World Desktop Editor to monitor your world’s performance is ‘World capacity’ information, which can be accessed through the main dropdown menu in the top left corner of the editor. Let’s run through each of it’s metrics and see how they influence the overall performance of the world and how they can be optimized.
 
-![Screen](https://github.com/lastxlr/MHCPTutorial/blob/cb8d24dba9e6523b5e6cff8d110ce24388f10ffc/docs/performance/Capture.PNG)
+![World Capacity](https://github.com/lastxlr/MHCPTutorial/blob/07a7e63e8fbe7f8758341177da7b151a16b76374/docs/performance/complete-performance-guide-lastxlr/images/CPGL-world-capacity-img.PNG)
 
 **Objects** 
 
@@ -26,7 +26,7 @@ As for collision,there are two key points. First, all newly added objects (eithe
 
 Second, yet very important. Collision is calculated based on the actual shape of the object and the amount of vertexes the mesh has. The engine doesn’t ‘see’ an object as an actual object - the house mesh for the engine is a set of vertices and their connection with each other and communication with other objects’ vertices. So the more vertices you collidable object has, the more calculations the engine needs to do to control collision. BUT there’s a great trick how to make even vertices-heavy object collidable with super light calculation for the engine - you can ‘wrap’ Horizon’s collider object (or several of those) over it, while turning off the collision for the object itself. Imagine you have high-poly objects whose collision is crucial. There’s no need to waste resources of the engine asking it to control an object's collision - just add one of the standard Horizon collider objects, place those on the objects’ position and adjust the scale so the collider would cover your object.
 
-![alt text](https://github.com/lastxlr/MHCPTutorial/blob/7099734d096b81f76e4ac0b07f298f31225beae8/docs/performance/Colliders.PNG)
+![Colliders](https://github.com/lastxlr/MHCPTutorial/blob/07a7e63e8fbe7f8758341177da7b151a16b76374/docs/performance/complete-performance-guide-lastxlr/images/CPGL-colliders.PNG)
 
 You can also use several colliders to build a more precise shape of the object. And the collision of the object itself can be set to ‘off’. This way engine will need to control collision for the basic cube or capsule, instead calculating it for all object’s vertices. With this method you can set almost all world’s objects collision to ‘off’, wrap it will basic colliders and save a ton of resources. Horizon’s colliders are lifesavers here!
 
@@ -38,7 +38,7 @@ Speaking of vertices, as already mentioned before the more vertices some object 
 
 Since we are talking about objects let’s cover the textures too. The logic is simple - the more textures as separate images you have in your world, the heavier the load on the device and engine (similar to the total objects count). Yet it doesn’t mean that you shall leave your objects without textures at all. As a solution you can combine the textures of different objects on the one UV map, or create trim textures. This way several different objects will use only one texture, this works the best for the small objects or the ones that are not that important. If you have lots of small objects (or the ones in the background) there’s no need for each of them to have a separate 1024x1024 texture. Instead, you can adjust their UV in 3D software the way so they would all share the same UV map. So instead of each of the objects having its own UV-map it will be like a ‘puzzle’ of all UVs ‘stored’ in one. Mastering creating and applying trim textures helps to significantly increase overall performance.
 
-![alt text](https://github.com/lastxlr/MHCPTutorial/blob/110542a53a02d3db3d33dd7a64101cd7c294bdfa/docs/performance/trim%201.PNG) ![alt text](https://github.com/lastxlr/MHCPTutorial/blob/110542a53a02d3db3d33dd7a64101cd7c294bdfa/docs/performance/trim%202.PNG)
+![Trim Texture 1](https://github.com/lastxlr/MHCPTutorial/blob/07a7e63e8fbe7f8758341177da7b151a16b76374/docs/performance/complete-performance-guide-lastxlr/images/CPGL-trim-texture-1.PNG) ![Trim Texture 2](https://github.com/lastxlr/MHCPTutorial/blob/07a7e63e8fbe7f8758341177da7b151a16b76374/docs/performance/complete-performance-guide-lastxlr/images/CPGL-trim-texture-2.PNG)
 
 Images source: FlippedNormals
 
